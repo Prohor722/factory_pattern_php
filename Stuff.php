@@ -2,22 +2,13 @@
 
 require_once 'Employee.php';
 
-class Stuff extends Employee{
-    private $work;
+class Stuff implements Employee{
 
-    public function __construct($name, $age, $salary, $work){
-        parent::__construct($name, $age, $salary);
-        $this->work = $work;
+    public function salary(){
+        return 12000;
     }
 
-    public function workType(){
-        return $this->work;
+    public function name(){
+        return "I am a Stuff";
     }
-
-    public function getStuffDetails(){
-        return "Stuff ".
-        $this->getDetails().
-        "Work Type: ".$this->workType();
-    }
-
 }

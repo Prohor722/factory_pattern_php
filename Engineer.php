@@ -2,21 +2,13 @@
 
 require_once "Employee.php";
 
-class Engineer extends Employee{
-    private $level = 0;
+class Engineer implements Employee{
 
-    public function __construct($name, $age, $salary, $level){
-        parent::__construct($name, $age, $salary);
-        $this->level = $level;
+    public function salary(){
+        return 25000;
     }
 
-    public function getLevel(){
-        return $this->level;
-    }
-
-    public function getEngeerDetails(){
-        return "Enginner ".
-        $this->getDetails().
-        "Level: ".$this->getLevel();
+    public function name(){
+        return "I am an Engineer";
     }
 }
