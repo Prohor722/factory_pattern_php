@@ -15,13 +15,9 @@ class Engineer extends Employee{
     }
 
     public function getEngeerDetails(){
-        return "Enginner name: ".$this->getName()."\r\n".
+        return "Enginner Name: ".$this->getName()."\r\n".
         "Salary: ".$this->getSalary()."\r\n".
         "Age: ".$this->getAge()."\r\n".
         "Level: ".$this->getLevel()."\r\n";
     }
 }
-
-$eng1 = new Engineer('jahid',27, 28000, 1);
-
-echo $eng1->getEngeerDetails();
