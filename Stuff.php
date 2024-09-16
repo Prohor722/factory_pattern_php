@@ -15,10 +15,9 @@ class Stuff extends Employee{
     }
 
     public function getStuffDetails(){
-        return "Stuff Name: ".$this->getName()."\r\n".
-        "Salary: ".$this->getSalary()."\r\n".
-        "Age: ".$this->getAge()."\r\n".
-        "Work Type: ".$this->workType()."\r\n";
+        return "Stuff ".
+        $this->getDetails().
+        "Work Type: ".$this->workType();
     }
 
 }

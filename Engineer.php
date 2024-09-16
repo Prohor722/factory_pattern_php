@@ -15,9 +15,8 @@ class Engineer extends Employee{
     }
 
     public function getEngeerDetails(){
-        return "Enginner Name: ".$this->getName()."\r\n".
-        "Salary: ".$this->getSalary()."\r\n".
-        "Age: ".$this->getAge()."\r\n".
-        "Level: ".$this->getLevel()."\r\n";
+        return "Enginner ".
+        $this->getDetails().
+        "Level: ".$this->getLevel();
     }
 }

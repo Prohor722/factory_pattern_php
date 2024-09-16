@@ -1,6 +1,6 @@
 <?php
 
-class Employee{
+abstract class Employee{
     private $name;
     private $salary;
     private $age;
@@ -24,9 +24,9 @@ class Employee{
     }
 
     public function getDetails(){
-        return 'name: '.$this->name.' - '.
-            'age: '.$this->age.' - '.
-            'salary: '.$this->salary;
+        return "Name: ".$this->getName()."\r\n".
+        "Salary: ".$this->getSalary()."\r\n".
+        "Age: ".$this->getAge()."\r\n";
     }
 }
 
