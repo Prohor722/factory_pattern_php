@@ -1,3 +1,3 @@
 <?php 
-    echo "testing 123"
+    echo "everything seems ok"
 ?>
