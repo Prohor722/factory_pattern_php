@@ -1,6 +1,6 @@
 <?php
 
-require "Employee.php";
+require_once "Employee.php";
 
 class Engineer extends Employee{
     private $level = 0;

@@ -1,6 +1,6 @@
 <?php 
 
-require 'Employee.php';
+require_once 'Employee.php';
 
 class Stuff extends Employee{
     private $work;
