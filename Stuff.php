@@ -2,13 +2,17 @@
 
 require_once 'Employee.php';
 
-class Stuff implements Employee{
+class Stuff extends Employee{
+    private $work_type = "";
 
-    public function salary(){
-        return 12000;
+    public function setWorkType($work_type){
+        $this->work_type = $work_type;
     }
-
-    public function name(){
-        return "I am a Stuff";
+    public function getWorkType(){
+        return $this->work_type;
+    }
+    public function stuffDetails(){
+        return "Stuff".$this->getDetails().
+            "Work Type: ".$this->getWorkType();
     }
 }

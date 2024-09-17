@@ -2,13 +2,17 @@
 
 require_once "Employee.php";
 
-class Engineer implements Employee{
+class Engineer extends Employee{
+    private $level = 0;
 
-    public function salary(){
-        return 25000;
+    public function setLevel($level){
+        $this->level = $level;
     }
-
-    public function name(){
-        return "I am an Engineer";
+    public function getLevel(){
+        return $this->level;
+    }
+    public function engDetails(){
+        return "Engineer".$this->getDetails().
+            "Level: ".$this->getLevel();
     }
 }
