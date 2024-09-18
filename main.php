@@ -18,4 +18,10 @@
     $emp2->setSalary(20000);
     $emp2->setWorkType("Head Chef");
     echo $emp2->stuffDetails();
+
+    $emp3->setName("Martha");
+    $emp3->setAge(28);
+    $emp3->setSalary(20000);
+    $emp3->setWorkType("Head Chef");
+    echo $emp3->stuffDetails();
 ?>
