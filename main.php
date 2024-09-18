@@ -23,5 +23,6 @@
     $emp3->setAge(32);
     $emp3->setSalary(13000);
     $emp3->setWorkType("Security Gard");
+    $emp3->setShift("night");
     echo $emp3->stuffDetails();
 ?>
