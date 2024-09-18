@@ -9,7 +9,9 @@ class Stuff extends Employee{
     public function setShift($shift) {
         $this->shift = $shift;
     }
-
+    public function getShift($shift) {
+        return $this->shift;
+    }
     public function setWorkType($work_type){
         $this->work_type = $work_type;
     }
@@ -18,6 +20,7 @@ class Stuff extends Employee{
     }
     public function stuffDetails(){
         return "Stuff".$this->getDetails().
-            "Work Type: ".$this->getWorkType();
+            "Work Type: ".$this->getWorkType()."\r\n".
+            "Shift: ".$this->getShiftS();
     }
 }
