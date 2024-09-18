@@ -6,6 +6,10 @@ class Stuff extends Employee{
     private $work_type = "";
     private $shift = "";
 
+    public function setShift($shift) {
+        $this->shift = $shift;
+    }
+
     public function setWorkType($work_type){
         $this->work_type = $work_type;
     }
