@@ -19,9 +19,9 @@
     $emp2->setWorkType("Head Chef");
     echo $emp2->stuffDetails();
 
-    $emp3->setName("Martha");
-    $emp3->setAge(28);
-    $emp3->setSalary(20000);
-    $emp3->setWorkType("Head Chef");
+    $emp3->setName("Riki");
+    $emp3->setAge(32);
+    $emp3->setSalary(13000);
+    $emp3->setWorkType("Security Gard");
     echo $emp3->stuffDetails();
 ?>
